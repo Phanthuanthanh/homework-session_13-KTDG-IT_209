@@ -1,11 +1,9 @@
-
-
 # Campus Hub Base
 
 ## Thông tin sinh viên & Báo cáo bài làm
 
 - **Họ và tên:** Phan Thuận Thành
-- **Mã sinh viên:** [Điền mã sinh viên tại đây]
+- **Mã sinh viên:** B24DTCN169
 
 ### Lệnh chạy hệ thống
 
