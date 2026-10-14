@@ -1,3 +1,5 @@
+
+
 # Campus Hub Base
 
 ## Thông tin sinh viên & Báo cáo bài làm
@@ -43,6 +45,9 @@ docker compose down
 ### Minh chứng kết quả thực hiện
 
 #### 1. Docker Image đã build thành công
+
+![Docker Images](./screenshots/1-docker-images.png)
+
 ```text
 docker images
 IMAGE                      ID             DISK USAGE   CONTENT SIZE
@@ -50,7 +55,11 @@ campus-hub-backend:latest  eb67391dded9  405MB        130MB
 mysql:8.0                  7dcddc01f13b  1.1GB        249MB
 ```
 
+
 #### 2. Trạng thái các service sau khi chạy Compose
+
+![Docker Compose PS](./screenshots/2-docker-compose-ps.png)
+
 ```text
 docker compose ps
 NAME                 IMAGE                COMMAND               SERVICE   STATUS                    PORTS
@@ -59,6 +68,9 @@ campus-hub-mysql     mysql:8.0            "docker-entrypoint.s" mysql     Up (he
 ```
 
 #### 3. Kết quả gọi /actuator/health trả về HTTP 200 và UP
+
+![Actuator Health](./screenshots/3-actuator-health.png)
+
 ```bash
 curl -i http://localhost:8080/actuator/health
 ```
